@@ -1,0 +1,22 @@
+<apex:page standardController="Account" recordSetVar="Accounts"> <!--multiple records controlled by list view-->
+  <!--<apex:detail relatedList="false"/>
+  <apex:relatedList list="Opportunities"/>
+  <apex:form>
+  <apex:pageBlock>
+  <apex:pageBlockTable value="{!Account.Opportunities}" var="Opp">
+  <apex:column value="{!Opp.name}"/>
+  <apex:column>
+  <apex:facet name="header">
+  Name
+  </apex:facet>
+  <apex:inputField value="{!Opp.name}"/>
+  </apex:column>
+  </apex:pageBlockTable>
+  </apex:pageBlock>
+  </apex:form>
+  <apex:form>
+  Name:<input type="text" value="{!Account.name}"/>
+  <apex:commandButton action="{!save}" value="Save"/>
+  </apex:form>-->
+  
+</apex:page>

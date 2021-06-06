@@ -1,0 +1,25 @@
+<apex:page standardController="Account" lightningStylesheets="true">
+
+    <apex:pageBlock >
+
+    You're looking at some related lists for {!account.name}:
+
+    </apex:pageBlock>
+
+ 
+
+    <apex:relatedList list="Opportunities" />
+
+ 
+
+    <apex:relatedList list="Contacts">
+
+        
+
+    </apex:relatedList>
+
+ 
+
+    <apex:relatedList list="Cases" title="Or you can keep the image, but change the text" />
+
+</apex:page>

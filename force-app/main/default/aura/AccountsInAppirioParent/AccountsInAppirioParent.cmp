@@ -1,0 +1,22 @@
+<aura:component >
+    
+    <c:AccountsInAppirioChild aura:id="AccountsInAppirioChildID">
+    
+    <aura:set attribute="header">
+        Hello from Header!
+        </aura:set>
+    <aura:set attribute="footer">
+        Hello from footer!
+        </aura:set>
+    </c:AccountsInAppirioChild>
+    
+    <aura:attribute name="AccountName" type="String" default="Appirio" />
+    <aura:attribute name="AccountOwner" type="String" default="Shrey"/>
+    <aura:attribute name="message" type="String" default="Message"/>
+    <br/>
+    <lightning:button label="Call JS" variant="base" onclick="{!c.CallJS}"/>
+    <br/>
+    {!v.message}
+   
+	
+</aura:component>

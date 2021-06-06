@@ -1,0 +1,18 @@
+<apex:page standardController="Account" tabStyle="Project__c">
+  <h1>Congratulations</h1>
+  This is your new Page
+  <apex:form >
+      <apex:pageBlock >
+      <apex:outputText >Welcome</apex:outputText>
+      <apex:pageBlockButtons location="top">
+      <apex:commandButton value="Save" action="{!save}"/>
+      <apex:commandButton value="Cancel" action="{!cancel}"/>
+      
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection title="Account detail" columns="1" collapsible="true">
+      <apex:outputField value="{!Account.Name}"/>
+      <apex:inputField value="{!Account.Name}"/>
+      </apex:pageBlockSection>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

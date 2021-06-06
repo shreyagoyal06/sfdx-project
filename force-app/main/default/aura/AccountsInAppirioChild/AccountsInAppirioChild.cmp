@@ -1,0 +1,24 @@
+<aura:component>
+    <aura:attribute name="ListofAccounts" type="String[]" default="Shreya,Jai,Akshay"/>
+    <aura:attribute name="header" type="Aura.component[]"/>
+    <aura:attribute name="footer" type="Aura.component[]"/>
+    <aura:attribute name="showFooter" type="Boolean" default="true"/>
+    
+    <span> {!v.header} </span>
+    
+    <aura:iteration items="{!v.ListofAccounts}" var="entry">
+        <br/>{!entry}
+    </aura:iteration>
+    <br/>
+    <aura:if isTrue="{!v.showFooter}">
+    <span> {!v.footer}</span>
+    </aura:if>
+    
+   <aura:method name="GetMessageFromChildMethod" action="{!c.getMessage}"
+                 access="public">
+        <aura:attribute name="Owner" type="String"/>
+       <aura:attribute name="Name" type="String"/>
+       
+    </aura:method>
+	
+</aura:component>

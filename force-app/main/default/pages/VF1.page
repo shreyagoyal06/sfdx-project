@@ -1,0 +1,7 @@
+<apex:page >
+ <apex:pageBlock >
+ {! $User.FirstName}
+ <p> Date after a fortnight {! TODAY() +14}</p>
+ <p>{!IF(DAY(TODAY())<10,'Before the 10th','After the 10th')}</p>
+ </apex:pageBlock>
+</apex:page>
